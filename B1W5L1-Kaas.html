@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>B1W5L1 - Kaas</title>
+	</head>
+	
+	<body>
+	<script>
+	
+	alert('beantwoord de volgende vragen met "ja" of "nee".');
+	
+	var geel; geel = prompt("Is de kaas geel?");
+	geel = geel.toLowerCase();
+	
+	if (geel == "ja") {
+		var gaten = prompt("Zitten er gaten in?");
+		gaten = gaten.toLowerCase();
+
+		if (gaten == "ja") {
+			var duur = prompt("Is de kaas belachelijk duur?");
+			duur = duur.toLowerCase();
+
+			if (duur == "ja") {
+					alert("Jouw kaas is Emmenthaler.");
+			}
+				if (duur == "nee") {
+						alert("Jouw kaas is Leerdammer.");
+				}
+		}
+		if (gaten == "nee") {
+			var hard = prompt("Is de kaas hard als steen?");
+			hard = hard.toLowerCase();
+
+			if (hard == "ja") {
+				alert("Jouw kaas is Parmigiano Reggiano.");
+			}
+				if (hard == "nee") {
+					alert("Jouw kaas is Goudse kaas.");
+				}
+		}
+	}
+	else if (geel == "nee") {
+		var schimmels = prompt("Heeft de kaas blauwe schimmels?");
+		schimmels = schimmels.toLowerCase();
+
+		if (schimmels == "ja") {
+			var korst = prompt("Heeft de kaas een korst?");
+			korst = korst.toLowerCase();
+			
+			if (korst == "ja") {
+				alert("Jouw kaas is Blue de Rochbaron.");
+			}
+				if (korst == "nee") {
+					alert("Jouw kaas is Fourme d’Ambert.");
+				}
+		}
+		if (schimmels == "nee") {
+			var korst2 = prompt("Heeft de kaas een korst?");
+			korst2 = korst2.toLowerCase();
+			
+			if (korst2 == "ja") {
+				alert("Jouw kaas is Camembert.");
+			}
+				if (korst2 == "nee") {
+					alert("Jouw kaas is Mozzarella.");
+				}			
+		}
+	}
+
+	</script>
+	</body>
+</html>
